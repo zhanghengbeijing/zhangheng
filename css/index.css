@@ -1,0 +1,74 @@
+.banner-info h1{
+	margin-top:40px; 
+	font-family:'Monotype Corsiva';
+	font-size:8rem; 
+	/*transition:all 0.5s ease; */
+	animation-name:zhuan;
+	animation-duration:20s;
+	animation-delay:0.5s; 
+	animation-iteration-count:infinite; 
+}
+/*.banner-info h1:hover{
+	transform:rotateY(-360deg);
+}*/
+
+@keyframes zhuan{
+	0%,100%{
+		transform:rotateY(360deg);
+	}
+	50%{
+		transform:rotateY(-360deg); 
+	}
+}
+
+.banner-info ul li{
+	animation-name:shan;
+	animation-duration:2s;
+	animation-delay:0.5s; 
+	animation-iteration-count:infinite;
+	font-family:'微软雅黑';
+}
+.banner-info ul li:hover{
+	margin-top:1px; 
+}
+@keyframes shan{
+	0%,100%{
+		opacity: 1;
+	}
+	50%{
+		opacity: 0.7;
+	}
+}
+.view .mask h3{
+	margin-top:60px;
+	margin-bottom:20px;  
+}
+.projects{
+	text-align:center; 
+	color:white;
+}
+.projects{
+	font-family:'微软雅黑'; 
+}
+.projects h3{
+	margin-top:30px; 
+}
+.footer h4{
+	color:blue;
+	font-family:'微软雅黑'; 
+	text-align:center; 
+}
+body{
+	box-sizing:border-box; 
+}
+@media(max-width:735px){
+	.banner-info h1{
+		font-size:2rem; 
+	}
+	.projects{
+		padding-top: 2em;
+	}
+	.projects h3{
+		font-size:16px; 
+	}
+}

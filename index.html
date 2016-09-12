@@ -1,0 +1,362 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>个人主页</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<script type="application/x-javascript">
+		addEventListener("load", function(){ 
+			setTimeout(hideURLbar, 0); 
+		}, false);
+		function hideURLbar(){ 
+			window.scrollTo(0,1); 
+		} 
+	</script>
+	<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+	<script src="js/jquery-1.12.1.js"></script>
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" href="css/index.css">
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+	</script>
+</head>
+<body>	
+	<!-- container -->
+	<!-- header -->
+	<div id="home" class="header">
+		<div class="container">
+			<div class="nav-icon">
+				<a href="#" class="right_bt" id="activator">
+				<span> </span> 
+				</a>
+			</div>
+			<div class="box" id="box">
+				<div class="box_content">	
+					<div class="box_content_center">
+						<div class="form_content">
+							<div class="menu_box_list">
+								<ul>
+									<li><a class="scroll" href="#home">home</a></li>
+									<li><a class="scroll" href="#about">About</a></li>
+									<li><a class="scroll" href="#services">Services</a></li>
+									<li><a class="scroll" href="#port">portfolio</a></li>
+									<li><a class="scroll" href="#blog">Blog</a></li>
+									<li><a class="scroll" href="#contact">Contact</a></li>
+									<div class="clear"> </div>
+								</ul>
+							</div>
+							<a class="boxclose" id="boxclose"> <span> </span></a>
+						</div>                                  
+					</div> 	
+				</div> 
+			</div>    
+			<!-- script-for-box -->
+			<script type="text/javascript">
+				var $ = jQuery.noConflict();
+				$(function() {
+					$('#activator').click(function(){
+						$('#box').animate({'top':'0px'},500);
+					});
+					$('#boxclose').click(function(){
+						$('#box').animate({'top':'-700px'},500);
+					});
+				});
+				$(document).ready(function(){
+						$(".toggle_container").hide(); 
+						$(".trigger").click(function(){
+							$(this).toggleClass("active").next().slideToggle("slow");
+								return false;
+							});
+					});
+				</script>
+
+				<div class="banner-info text-center">
+					<!-- <img src="images/5.png" class="img-responsive" alt=""/> -->
+					<h1>Zhang heng</h1>
+					<p>Love to Design and tourism</p>
+					<ul>
+						<li class="lianxiwo"><a href="#">联系我</a></li>
+						<li class="aboutme"><a href="#">关于我</a></li>
+					</ul>
+				</div>
+				<!-- banner-info -->
+			</div>
+		</div>
+		<!-- /header -->
+		<!-- about -->
+		<div id="about" class="about">
+			<div class="container">
+				<!-- head-section -->
+				<div class="head-section text-center">
+					<h2>About Me</h2>
+					<h5 style="color:black;font-weight:bolder;font-family:'微软雅黑'">关&nbsp;于&nbsp;我</h5>
+					<span></span>
+				</div>
+				<!-- head-section -->
+				<!-- about-grids -->
+				<div class="about-grids">
+					<div class="col-md-6 about-left-grid">
+						<h3>张恒,Zhang Heng</h3>
+						<span>前端工程师,The front engineer </span>
+						<p>我精通html，css，javascript，jquery，css3，html5等多种结构编程语言，能熟练运用angular,bootstrap等框架以及各种插件。熟悉各种网站的布局规格；能力较强，善于处理各种兼容性问题，在响应式方面有着广泛的兴趣，对于HTML5有着深层次的理解和认识。</p>
+						<p>我性格乐观，做事沉稳，对待工作认真，对IT行业有浓厚的兴趣爱好，经常性了解行业的发展状况，对一些新东西比较执着；我乐于和别人合作，这样能够达到更好的效果。</p>
+					</div>
+					<div class="col-md-6 about-right-grid">
+						<a class="popup-with-zoom-anim" href="#small-dialog"><img src="images/21b0487e9cbe066252483b542c68a843.gif" title="name" /></a>
+					</div>
+				</div>
+				<!-- about-grids -->
+			</div>
+		</div>
+		<!-- about -->
+		<!---pop-up-box-->
+		<script type="text/javascript" src="js/modernizr.custom.min.js"></script>    
+		<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
+		<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+		<!--//pop-up-box-->
+		<div id="small-dialog" class="mfp-hide">
+		</div>
+		<div id="services" class="services" style="background:#1e1d2e">
+			<!-- head-section -->
+			<div class="head-section service-head text-center">
+				<h2>My skills</h2>
+				<h5 style="color:white;font-weight:bolder;font-family:'微软雅黑'">我&nbsp;的&nbsp;技&nbsp;能</h5>
+				<span></span>
+			</div>
+			<!-- head-section -->
+			<!-- services-grids -->
+			<div class="about" style="color:white">
+				<div class="container" style="">
+					<!-- <h3>My skills</h3> -->
+					<div class="study2">
+						<div class="col-md-6 about-left">
+							<h4>Html</h4>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger-3" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 90%;background:#f75c4c">
+									<span class="sr-only">90% Complete (success)</span>
+								</div>
+							</div>
+							<h4>Html5</h4>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger-3" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 80%;background:#ea4c88">
+									<span class="sr-only">80% Complete</span>
+								</div>
+							</div>
+							<h4>Css</h4>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger-3" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 90%;background:#f9b32f">
+									<span class="sr-only">90% Complete</span>
+								</div>
+							</div>
+							<h4>Css3</h4>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger-3" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 85%;background:#e94483">
+									<span class="sr-only">85% Complete (warning)</span>
+								</div>
+							</div>
+							<h4>Bootstrap</h4>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger-3" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 75%;background:#c9195c">
+									<span class="sr-only">75% Complete (danger)</span>
+								</div>
+							</div>
+							<h4>Javascript</h4>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger-3" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:87%;background:#f75c4c">
+									<span class="sr-only">87% Complete (danger)</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 about-right">
+							<h4>Angularjs</h4>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger-3" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 60%;background:#f9b32f">
+									<span class="sr-only">60% Complete (danger)</span>
+								</div>
+							</div>
+							<h4>JQuery</h4>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger-3" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 85%;background:#c9195c">
+									<span class="sr-only">85% Complete (danger)</span>
+								</div>
+							</div>
+							
+							<h4>jQureyMobile</h4>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger-3" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;background:#e94483">
+									<span class="sr-only">75% Complete (success)</span>
+								</div>
+							</div>
+							<h4>Photoshop</h4>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger-3" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%;background:#f75c4c">
+									<span class="sr-only">80% Complete (success)</span>
+								</div>
+							</div>
+							<h4>Ajax</h4>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger-3" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 60%;background:#c9195c">
+									<span class="sr-only">60% Complete (success)</span>
+								</div>
+							</div>
+							<h4>App混合开发</h4>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger-3" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:65%;background:#f9b32f">
+									<span class="sr-only">65% Complete (danger)</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- services-grids -->
+		</div>
+		<!-- services -->
+
+
+		<!-- portfolio -->
+		<div id="port" class="portfolio">
+			<div class="container">
+				<!-- head-section -->
+				<div class="head-section text-center">
+					<h2>MY WORKS</h2>
+					<h5 style="color:black;font-weight:bolder;font-family:'微软雅黑'">我&nbsp;的&nbsp;作&nbsp;品</h5>
+					<span></span>
+				</div>
+				<!-- /head-section -->
+				<!-- portfolio-grids -->
+				<div class="portfolio-grids">
+					
+					
+					<div class="portfolio-grid about-grid">
+						<div class="view view-first">
+							<img src="images/2016-08-04_084838.png" class="img-responsive" alt="" style="width:100%"/>
+							<div class="mask">
+								<h3>to do list</h3>
+								<input type="button" onclick="window.open('../iCloud/index.html')" value="VIEW" style="color:black;margin-top:10px;"/>
+								<p style="margin-top:10px;">Product Design</p>
+								
+							</div>
+						</div>
+
+					</div>
+					<div class="portfolio-grid about-grid">
+						<div class="view view-first">
+							<img src="images/2016-08-03_110450.png" class="img-responsive" alt="" style="width:100%"/>
+							<div class="mask">
+								<h3>icloud</h3>
+								<input type="button" onclick="window.open('#')" value="VIEW" style="color:black;margin-top:10px;"/>
+								<p style="margin-top:10px;">Product Design</p>	
+							</div>
+						</div>
+					</div>
+					<div class="portfolio-grid about-grid">
+						<div class="view view-first">
+							<img src="images/2016-08-03_175346.png" class="img-responsive" alt="" style="width:100%"/>
+							<div class="mask">
+								<h3>百度舆情</h3>
+								<input type="button" onclick="window.open('#')" value="VIEW" style="color:black;margin-top:10px;"/>
+								<p style="margin-top:10px;">Product Design</p>	
+							</div>
+						</div>
+					</div>
+					<div class="portfolio-grid about-grid">
+						<div class="view view-first">
+							<img src="images/fullpages.jpg" class="img-responsive" alt="" style="width:100%"/>
+							<div class="mask">
+								<h3>fullpage</h3>
+								<input type="button" onclick="window.open('#')" value="VIEW" style="color:black;margin-top:10px;"/>
+								<p style="margin-top:10px;">Product Design</p>	
+							</div>
+						</div>
+					</div>
+					<div class="portfolio-grid about-grid">
+						<div class="view view-first">
+							<img src="images/2016-08-03_144047.png" class="img-responsive" alt="" style="width:100%"/>
+							<div class="mask">
+								<h3>百度未来商店</h3>
+								<input type="button" onclick="window.open('../baiduweilai/index.html')" value="VIEW" style="color:black;margin-top:10px;"/>
+								<p style="margin-top:10px;">Product Design</p>	
+							</div>
+						</div>
+					</div>
+					<div class="portfolio-grid about-grid">
+						<div class="view view-first">
+							<img src="images/2016-08-03_110204.png" class="img-responsive" alt="" style="width:100%"/>
+							<div class="mask">
+								<h3>京东</h3>
+								<input type="button" onclick="window.open('../jingdong/index.Html')" value="VIEW" style="color:black;margin-top:10px;"/>
+								<p style="margin-top:10px;">Product Design</p>
+							</div>
+						</div>
+
+					</div>
+					<div class="portfolio-grid about-grid">
+						<div class="view view-first">
+							<img src="images/apple.png" class="img-responsive" alt="" style="width:100%"/>
+							<div class="mask">
+								<h3>Apple</h3>
+								<input type="button" onclick="window.open('#')" value="VIEW" style="color:black;margin-top:10px;"/>
+								<p style="margin-top:10px;">Product Design</p>
+							</div>
+						</div>
+
+					</div>
+					<div class="portfolio-grid about-grid">
+						<div class="view view-first">
+							<img src="images/xiaomi.png" class="img-responsive" alt="" style="width:100%"/>
+							<div class="mask">
+								<h3>小米</h3>
+								<input type="button" onclick="window.open('#')" value="VIEW" style="color:black;margin-top:10px;"/>
+								<p style="margin-top:10px;">Product Design</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+                <!-- portfolio-grids -->
+            </div>
+        </div>
+        <div class="projects">
+        	<div class="container">
+        		<div class="project-grids">
+        			<h1>CONTACT ME</h1>
+        			<h3>北京</h3>
+        			<h3>Tel:18335831575</h3>
+        			<h3>QQ:929261748</h3>
+        			<h3>Email:18335831575@163.com</h3>
+        			
+        			<div class="clearfix"> </div>
+        		</div>
+        	</div>
+        </div>
+        <!-- projects -->
+        <!-- catch-on -->
+        <div class="container">
+        	<div class="footer">
+        		<a href="#"><h4>2016@Designed by Zhangheng</h4></a>
+        		<div class="clearfix"> </div>
+        	</div>
+        	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+        </div>
+        <!-- /footer -->
+        <!-- /container -->
+        <script>
+        	var lianxiwo=$(".lianxiwo");
+        	$(lianxiwo).click(function(){
+        		$('html, body').animate({scrollTop:3240})
+        	})
+        	var aboutme=$(".aboutme");
+        	$(aboutme).click(function(){
+        		$('html, body').animate({scrollTop:750})
+        	})
+        </script>
+    </body>
+    </html>
